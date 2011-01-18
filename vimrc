@@ -2,7 +2,8 @@ set nocompatible
 syntax on 
 set number
 set scrolloff=3
-
+set noea
+set equalalways
 "Speed up buffer switching
 map <C-Up> <C-W>k
 map <C-Down> <C-W>j
@@ -19,3 +20,4 @@ set shiftwidth=2
 map <S-Tab> :tabprev <CR>
 
 set background=dark
+
