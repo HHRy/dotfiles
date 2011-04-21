@@ -1,5 +1,3 @@
-set nocompatible
-syntax on 
 set number
 set scrolloff=3
 set noea
@@ -19,5 +17,13 @@ set shiftwidth=2
 
 map <S-Tab> :tabprev <CR>
 
-set background=dark
+set foldmethod=indent   "fold based on indent
+set foldnestmax=10      "deepest fold is 10 levels
+set nofoldenable        "dont fold by default
+set foldlevel=1         "this is just what i use
 
+set background=dark
+colorscheme solarized
+syntax on 
+autocmd InsertEnter * setlocal spell
+autocmd InsertLeave * setlocal nospell

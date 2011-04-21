@@ -1,0 +1,8 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =6
+let g:netrw_dirhist_1='/Users/ryan/.rvm/gems/ree-1.8.7-2011.03@freeagent-rails3/gems/railties-3.0.5/lib'
+let g:netrw_dirhist_2='/Users/ryan/.rvm/gems/ree-1.8.7-2011.03@freeagent-rails3/gems/railties-3.0.5/lib/rails'
+let g:netrw_dirhist_3='/Users/ryan/work/freeagent/vendor/plugins'
+let g:netrw_dirhist_4='/Users/ryan/work/freeagent/test'
+let g:netrw_dirhist_5='/Users/ryan/work/freeagent/vendor/plugins/human_attribute_override'
+let g:netrw_dirhist_6='/Users/ryan/work/freeagent/vendor/plugins/human_attribute_override/lib'
