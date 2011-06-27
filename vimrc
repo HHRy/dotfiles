@@ -1,3 +1,4 @@
+set nocompatible
 set number
 set scrolloff=3
 set noea
@@ -17,13 +18,17 @@ set shiftwidth=2
 
 map <S-Tab> :tabprev <CR>
 
-set foldmethod=indent   "fold based on indent
-set foldnestmax=10      "deepest fold is 10 levels
-set nofoldenable        "dont fold by default
-set foldlevel=1         "this is just what i use
-
 set background=dark
+set t_Co=256
 colorscheme solarized
 syntax on 
 autocmd InsertEnter * setlocal spell
 autocmd InsertLeave * setlocal nospell
+
+" Highlight trailing whitespace, 'cos I dislike that sort of thing.
+highlight ExtraWhitespace ctermbg=red guibg=red
+match ExtraWhitespace /\s\+$/
+autocmd BufWinEnter * match ExtraWhitespace /\s\+$/
+autocmd InsertEnter * match ExtraWhitespace /\s\+\%#\@<!$/
+autocmd InsertLeave * match ExtraWhitespace /\s\+$/
+autocmd BufWinLeave * call clearmatches()

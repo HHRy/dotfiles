@@ -11,15 +11,16 @@ alias gvim="mvim"
 alias ll="ls -l"
 alias lla="ls -al"
 alias grep="grep --color"
-alias ss="clear ; ./script/server"
-alias sc="./script/console"
-alias ptest="clear ; rake parallel:prepare && rake parallel:test"
-alias gemset="rvm gemset use 'freeagent-master'"
-alias glog="git log > /tmp/log ; vim /tmp/log ; rm /tmp/log"
+
+alias rake="bundle exec rake"
+alias cap="bundle exec cap"
+alias passenget="bundle exec passenger"
 
 if [ -f `brew --prefix`/etc/bash_completion ]; then
   . `brew --prefix`/etc/bash_completion
 fi
+
+source ~/.git-flow-completion.sh
 
 export RUBY_GC_MALLOC_LIMIT=1000000000
 export RUBY_HEAP_FREE_MIN=500000
